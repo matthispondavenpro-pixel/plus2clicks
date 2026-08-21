@@ -699,7 +699,7 @@ class Component extends DCLogic {
     const scrolled = this.state.scrolled;
 
     // hero: 5 real miniatures in an arc — image 2 (Stratégie de Contenu) at center
-    const heroImgs = ['https://plus2clicks.fr/hero1.jpg','https://plus2clicks.fr/hero2.jpg','https://plus2clicks.fr/hero3.jpg','https://plus2clicks.fr/hero4.jpg','https://plus2clicks.fr/hero5.jpg'];
+    const heroImgs = ['https://plus2clicks.fr/hero1.jpg','https://plus2clicks.fr/hero2.jpg','https://plus2clicks.fr/hero3.jpg','https://plus2clicks.fr/hero4.png','https://plus2clicks.fr/hero5.png'];
     const heroOrder = [0,2,1,3,4]; // center = index 1 (hero2)
     const arcConfig = [{w:'198px',ty:'28px',rot:'-8deg'},{w:'222px',ty:'10px',rot:'-3deg'},{w:'248px',ty:'0px',rot:'0deg'},{w:'222px',ty:'10px',rot:'3deg'},{w:'198px',ty:'28px',rot:'8deg'}];
     const heroThumbs = arcConfig.map((c,i)=>({...c, src:heroImgs[heroOrder[i]]}));
@@ -709,9 +709,9 @@ class Component extends DCLogic {
       {niche:'Finance', src:'https://plus2clicks.fr/mini1.jpg'},
       {niche:'Marketing', src:'https://plus2clicks.fr/mini2.jpg'},
       {niche:'Coaching', src:'https://plus2clicks.fr/mini3.jpg'},
-      {niche:'SEO', src:'https://plus2clicks.fr/mini4.jpg'},
-      {niche:'Trading', src:'https://plus2clicks.fr/mini5.jpg'},
-      {niche:'Coaching', src:'https://plus2clicks.fr/mini6.jpg'},
+      {niche:'SEO', src:'https://plus2clicks.fr/mini4.png'},
+      {niche:'Trading', src:'https://plus2clicks.fr/mini5.png'},
+      {niche:'Coaching', src:'https://plus2clicks.fr/mini6.png'},
     ];
     const clientThumbs = niches.map((n,i)=>{ return { src:n.src, niche:n.niche, open:open('Miniature '+n.niche, n.src) }; });
 
